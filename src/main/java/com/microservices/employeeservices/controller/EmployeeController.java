@@ -33,7 +33,7 @@ public class EmployeeController {
     @PostMapping("/employees")
     private ResponseEntity<EmployeeResponse> saveEmployeeDetails(@Validated @RequestBody Employee employee) {
 //        EmployeeResponse employee = employeeService.saveEmployee(employeeTemp);
-        return  ResponseEntity.status(HttpStatus.OK).body(employeeService.saveEmployee(employee));
+        return ResponseEntity.status(HttpStatus.OK).body(employeeService.saveEmployee(employee));
 
     }
 
@@ -42,7 +42,6 @@ public class EmployeeController {
         List<Employee> employees = employeeService.getAllEmployees();
         return ResponseEntity.status(HttpStatus.OK).body(employees);
     }
-
 
 
 }

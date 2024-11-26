@@ -7,24 +7,23 @@ import jakarta.persistence.*;
 public class Pincode {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id")
+    @Column(name = "id")
     private int id;
 
-    @Column(name="pincode")
+    @Column(name = "pincode")
     private String pincode;
 
-    @Column(name="city")
+    @Column(name = "city")
     private String city;
 
-    @Column(name="area")
+    @Column(name = "area")
     private String area;
 
-    @Column(name="state")
+    @Column(name = "state")
     private String state;
 
-    @Column(name="district")
+    @Column(name = "district")
     private String district;
-
 
 
 }

@@ -3,7 +3,7 @@ package com.microservices.employeeservices.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="company")
+@Table(name = "company")
 public class Company {
 
     @Id
@@ -12,9 +12,8 @@ public class Company {
     private int id;
 
     @OneToOne
-    @Column(name="employeeId")
+    @Column(name = "employeeId")
     private int employeeId;
-
 
 
 }

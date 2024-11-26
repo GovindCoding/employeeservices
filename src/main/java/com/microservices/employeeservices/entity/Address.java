@@ -3,26 +3,23 @@ package com.microservices.employeeservices.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name= "address")
+@Table(name = "address")
 public class Address {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id")
+    @Column(name = "id")
     private int id;
 
-    @Column(name="city")
+    @Column(name = "city")
     private String city;
 
-    @Column(name="district")
+    @Column(name = "district")
     private String district;
 
     @OneToOne
-    @Column(name="pincode")
+    @Column(name = "pincode")
     private String pincode;
-
-    
-
 
 
 }
